@@ -1,11 +1,12 @@
-import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
-  runApp(Jahaz());
+  runApp(const Jahaz());
 }
 
 class Jahaz extends StatefulWidget {
+  const Jahaz({super.key});
+
   @override
   State<Jahaz> createState() => _JahazState();
 }

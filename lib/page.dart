@@ -1,34 +1,34 @@
 import 'package:flutter/material.dart';
 
-class firstscreen extends StatelessWidget {
+class Firstscreen extends StatelessWidget {
+  const Firstscreen({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text("1st tab"),
-      ),
+    return const Center(
+      child: Text("1st tab"),
     );
   }
 }
 
-class secondscreen extends StatelessWidget {
+class Secondscreen extends StatelessWidget {
+  const Secondscreen({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text("1st ddddtab"),
-      ),
+    return const Center(
+      child: Text("1st ddddtab"),
     );
   }
 }
 
-class thirdscreen extends StatelessWidget {
+class Thirdscreen extends StatelessWidget {
+  const Thirdscreen({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text("1st dddtab"),
-      ),
+    return const Center(
+      child: Text("1st dddtab"),
     );
   }
 }
