@@ -21,25 +21,34 @@ class _JahazState extends State<Jahaz> {
   }
 }
 
-class JahazHome extends StatefulWidget {
+class JahazHome extends StatelessWidget {
   const JahazHome({super.key});
 
   @override
-  State createState() => _JahazHome();
-}
-
-class _JahazHome extends State<JahazHome> {
-  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black45,
-      body: ListView(
-        children: const [
-          ListTile(title: Text("data 1")),
-          ListTile(title: Text("data 1")),
-          ListTile(title: Text("data 1")),
-        ],
-      ),
-    );
+    return Scaffold(body: Container());
   }
 }
+
+// class JahazHome extends StatefulWidget {
+//   const JahazHome({super.key});
+
+//   @override
+//   State createState() => _JahazHome();
+// }
+
+// class _JahazHome extends State<JahazHome> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       backgroundColor: Colors.black45,
+//       body: ListView(
+//         children: const [
+//           ListTile(title: Text("data 1")),
+//           ListTile(title: Text("data 1")),
+//           ListTile(title: Text("data 1")),
+//         ],
+//       ),
+//     );
+//   }
+// }
