@@ -13,26 +13,31 @@ class Jahaz extends StatefulWidget {
 class _JahazState extends State<Jahaz> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: "list view tests",
-      home: JajazHome(),
+      home: JahazHome(),
     );
   }
 }
 
-class JahazHome extends State<_JahazState> {
+class JahazHome extends StatefulWidget {
+  const JahazHome({super.key});
+
+  @override
+  State createState() => _JahazHome();
+}
+
+class _JahazHome extends State<JahazHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black45,
-      body: Container(
-        child: ListView(
-          children: [
-            ListTile(title: Text("data 1")),
-            ListTile(title: Text("data 1")),
-            ListTile(title: Text("data 1")),
-          ],
-        ),
+      body: ListView(
+        children: const [
+          ListTile(title: Text("data 1")),
+          ListTile(title: Text("data 1")),
+          ListTile(title: Text("data 1")),
+        ],
       ),
     );
   }
